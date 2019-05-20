@@ -16,10 +16,9 @@ public class GameBoard extends JFrame implements ActionListener {
 	private BufferedImage blackTile;
 	private BufferedImage grayTile;
 	private ArrayList<GamePiece> whitePieces;
-	private ArrayList<GamePiece> darkPieces;
+	private ArrayList<GamePiece> darkPieces;	
 	
 	public GameBoard(){
-
 		//Initialize the variables:
 		whitePieces = new ArrayList<GamePiece>();
 		
@@ -27,9 +26,7 @@ public class GameBoard extends JFrame implements ActionListener {
 		blackTile = assignTile(new File("img/blacktile.png"));
 		grayTile = assignTile(new File("img/graytile.png"));
 		
-		buildGameboard();
-
-		
+		buildGameboard();		
 	}
 	
 	public void buildGameboard(){		
@@ -134,11 +131,6 @@ public class GameBoard extends JFrame implements ActionListener {
 	public void actionPerformed(ActionEvent arg0) {
 		// TODO Auto-generated method stub
 		
-	}
-	
-	public static void main(String[] args){
-		GameBoard g = new GameBoard();
-		g.setVisible(true);
 	}
 	
 	public BufferedImage assignTile(File image){
